@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 140vh;
+    position: relative;
+    background-color: rgba(156, 158, 158, 0.704);
+    animation:  cambiar-fondo 10s ease infinite;
+    transition: all ease 500ms;
+
+}
+span{
+    font-size: 1em;
+    color: #fff;
+}
+@keyframes cambiar-fondo {
+    0%{background-image: url(img/Ofertas/1.jpg);background-position: center;
+      background-size: cover;}
+    25%{background-image: url(img/Ofertas/2.jpg);background-position: center;
+      background-size: cover;}
+    50%{background-image: url(img/Ofertas/3.jpg);background-position: center;
+      background-size: cover;}
+    100%{background-image: url(img/Ofertas/4.jpg);background-position: center;
+      background-size: cover;}
+}
+  
+input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+input:hover{
+    color: red;
+    box-shadow: 0px 8px 10px 0px rgba(255, 0, 0, 0.589);
+}
+.container{
+    display: grid;
+    grid-template-rows: 0.8fr 10fr;
+    
+    
+    position: absolute;
+    width: 60%;
+    min-height: 90%;
+    background-color:  rgba(0, 0, 0, 0.555);
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.752);
+
+    
+}
+.principal{
+ display: flex;
+ flex-direction: row;
+ justify-content: start;
+ align-items: center;
+}
+.home-icon{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 2em;
+}
+.home-icon:hover{
+    color: red;
+}
+.bebidas{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding: 20px;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: auto;
+    margin: 0 auto;
+}
+.tarjetas{
+    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+    border: 1px solid #bb1b1b;
+}
+.caja-botones{
+    margin-top: 5px;
+}
+.T1{
+    background-image: url(img/Bebidas/1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.T2{
+    background-image: url(img/Bebidas/2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.T3{
+    background-image: url(img/Bebidas/3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.T4{
+    background-image: url(img/Bebidas/4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.T5{
+    background-image: url(img/Bebidas/5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.T6{
+    background-image: url(img/Bebidas/6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.T7{
+    background-image: url(img/Bebidas/7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.T8{
+    background-image: url(img/Bebidas/8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.T9{
+    background-image: url(img/Bebidas/9.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
