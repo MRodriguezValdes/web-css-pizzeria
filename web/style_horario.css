@@ -8,7 +8,7 @@ body{
    background-image: url(img/horario.png);
    background-position: center;
    background-size: cover;
-   background-repeat: no-repeat;
+   background-repeat: repeat;
 }
 .container{
     display: flex;
@@ -20,6 +20,8 @@ body{
 
 /* Tabla-Propiedades */
 table{
+    width: 80%;
+    height: 400px;
     margin: 50px auto;
     border-collapse: collapse;
 }
@@ -27,9 +29,7 @@ table tr {
     text-align: center;
 }
 table td{
-    padding: 30px;
     font-size: 1.5em;
-    margin-bottom: 20px;
 }
 table td:nth-child(even){
     color: rgb(255, 196, 0);
@@ -93,5 +93,19 @@ table tr:hover{
     }
     100% {
       color: #eb0909;
+    }
+  }
+  @media screen and (max-width: 1250px){
+    body{
+        width: 100vw;
+    }
+    table{
+        width:100%;
+    }
+    .eliminar{
+        display: none;
+    }
+    table td{
+        font-size: 1em;
     }
   }

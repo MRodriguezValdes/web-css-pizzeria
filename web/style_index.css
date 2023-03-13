@@ -345,10 +345,7 @@ h1{
 }
 #info{
     display: flex;
-    flex-direction: column;.tarjetas{
-        width: 100%;
-    }
-
+    flex-direction: column;
     min-width: 400px;
     font-size: 1.2em;
     padding-left: 20px;
@@ -413,41 +410,8 @@ h1{
 
 
 /* Media queries */
-/* estilos para teléfonos móviles */
-@media screen and (max-width: 480px) {
-    
-    #menu-horizontal{
-        top:50px;
-        right: 67px
-    }
-    .container #ofertas-banner{
-        width:100vw;
-        background-image: none;
-        background-color: #1f1f1f;
-    }
-    .container #login{
-        width:100vw;
-    }
-    #seccion-opciones{
-        width:100vw;
-        border-radius: 0px;
-    }
-    #container-tarjetas{
-        width: 100%;
-        grid-template-columns: 1fr;
-    }
-    .tarjetas{
-        width: 100%;
-    }
-    #footer{
-        width:100vw;
-        flex-direction: column;
-    }
-
-
-}
-/* estilos para tablet */
-@media screen and (min-width: 481px) and (max-width: 1000px) {
+/* estilos para teléfonos móviles  y tablets*/
+@media screen and (max-width: 1000px){
     
     #menu-horizontal{
         top:50px;
@@ -481,6 +445,7 @@ h1{
         width:100vw;
         flex-direction: column;
     }
+
 
 }
 /* Alternativo */

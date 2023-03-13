@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
 }
 body{
     display: flex;
@@ -14,13 +13,14 @@ body{
     position: relative;
     background-color: rgba(156, 158, 158, 0.704);
     animation:  cambiar-fondo 10s ease infinite;
-    transition: all 2s ease ;
+    transition: all ease 500ms;
 
 }
 span{
     font-size: 1em;
     color: #fff;
 }
+  
 input{
     padding: 10px;
     border: none;
@@ -28,10 +28,12 @@ input{
     background-color: black;
     color: white;
 }
+
 input:hover{
     color: red;
     box-shadow: 0px 8px 10px 0px rgba(255, 0, 0, 0.589);
 }
+
 .container{
     display: grid;
     grid-template-rows: 0.8fr 10fr;
@@ -48,7 +50,7 @@ input:hover{
 }
 
 
-/* 1era fila: Btn Home */
+/* 1era fila : Btn Home */
 .principal{
  display: flex;
  flex-direction: row;
@@ -68,8 +70,9 @@ input:hover{
 }
 
 
-/* Bebidas-Opciones */
-.bebidas{
+
+/* Postres-Opciones */
+.postres{
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
@@ -92,55 +95,55 @@ input:hover{
 
 /* Menu de opciones */
 .T1{
-    background-image: url(img/Bebidas/1.jpg);
+    background-image: url(img/Postres/1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .T2{
-    background-image: url(img/Bebidas/2.jpg);
+    background-image: url(img/Postres/2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .T3{
-    background-image: url(img/Bebidas/3.jpg);
+    background-image: url(img/Postres/3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .T4{
-    background-image: url(img/Bebidas/4.jpg);
+    background-image: url(img/Postres/4.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .T5{
-    background-image: url(img/Bebidas/5.jpg);
+    background-image: url(img/Postres/5.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .T6{
-    background-image: url(img/Bebidas/6.jpg);
+    background-image: url(img/Postres/6.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .T7{
-    background-image: url(img/Bebidas/7.jpg);
+    background-image: url(img/Postres/7.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .T8{
-    background-image: url(img/Bebidas/8.jpg);
+    background-image: url(img/Postres/8.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .T9{
-    background-image: url(img/Bebidas/9.jpg);
+    background-image: url(img/Postres/9.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -169,3 +172,46 @@ input:hover{
       color: #eb0909;
     }
   }
+
+
+/* Media queries */
+@media screen and (max-width: 700px){
+    .container{
+        width: 100%;
+    }
+    .postres{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .tarjetas{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 701px) and (max-width: 1400px) {
+
+    .container{
+        width: 100%;
+    }
+    .postres{
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .tarjetas{
+        width: 100%;
+    }
+
+}
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+
+    .container{
+        width: 100%;
+    }
+    .postres{
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .tarjetas{
+        width: 100%;
+    }
+
+}
