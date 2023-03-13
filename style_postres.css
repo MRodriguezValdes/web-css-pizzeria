@@ -1,3 +1,4 @@
+/* General */
 *{
     margin: 0;
     padding: 0;
@@ -19,16 +20,6 @@ span{
     font-size: 1em;
     color: #fff;
 }
-@keyframes cambiar-fondo {
-    0%{background-image: url(img/Ofertas/1.jpg);background-position: center;
-      background-size: cover;}
-    25%{background-image: url(img/Ofertas/2.jpg);background-position: center;
-      background-size: cover;}
-    50%{background-image: url(img/Ofertas/3.jpg);background-position: center;
-      background-size: cover;}
-    100%{background-image: url(img/Ofertas/4.jpg);background-position: center;
-      background-size: cover;}
-}
   
 input{
     padding: 10px;
@@ -42,6 +33,7 @@ input:hover{
     color: red;
     box-shadow: 0px 8px 10px 0px rgba(255, 0, 0, 0.589);
 }
+
 .container{
     display: grid;
     grid-template-rows: 0.8fr 10fr;
@@ -56,6 +48,9 @@ input:hover{
 
     
 }
+
+
+/* 1era fila : Btn Home */
 .principal{
  display: flex;
  flex-direction: row;
@@ -71,6 +66,10 @@ input:hover{
 .home-icon:hover{
     color: red;
 }
+
+
+
+/* Postres-Opciones */
 .postres{
 
     display: grid;
@@ -90,6 +89,9 @@ input:hover{
 .caja-botones{
     margin-top: 5px;
 }
+
+
+/* Menu de opciones */
 .T1{
     background-image: url(img/Postres/1.jpg);
     background-position: center;
@@ -143,4 +145,17 @@ input:hover{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+
+/* Animaciones */
+@keyframes cambiar-fondo {
+    0%{background-image: url(img/Ofertas/1.jpg);background-position: center;
+      background-size: cover;}
+    25%{background-image: url(img/Ofertas/2.jpg);background-position: center;
+      background-size: cover;}
+    50%{background-image: url(img/Ofertas/3.jpg);background-position: center;
+      background-size: cover;}
+    100%{background-image: url(img/Ofertas/4.jpg);background-position: center;
+      background-size: cover;}
 }

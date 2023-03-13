@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Rampart+One&display=swap');
 
+
 /*General*/
 *{
     padding: 0;
@@ -12,6 +13,10 @@ body{
 h1{
     font-size: 1.6em;
 }
+
+
+
+/* Menu Fijo */
 #menuPrincipal{
     position: sticky;
     top:0;
@@ -19,12 +24,11 @@ h1{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
+    
     width: 100%;
     color:#fff;
     background-color: black;
 }
-
 #menuPrincipal>menu>ul{
    list-style: none
 }
@@ -33,106 +37,7 @@ h1{
     float:left;
     margin-left: 20px;
 }
-.icon-menu{
-    font-size: 1.2em;
-    cursor: pointer;
-}
-.icon-menu:hover{
-    color: red;
-}
 
-.container{
-    width: 100%;
-    height: 1080px;
-    min-height:640px;
-    display: grid;
-    grid-template-rows: 200px 300px 1fr 500px;
-}
-.container #ofertas-banner{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url(img/bannerpiza.png);
-    background-repeat: no-repeat;
-    background-position:center ;
-    background-size: cover;
-    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.644);
-}
-
-
-#login{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-
-#seccion-opciones{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 10%;
-    background-image: url(img/board.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    box-shadow: 0px 8px 20px 20px rgba(0, 0, 0, 0.644);
-}
-#container-tarjetas{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-    padding: 35px;
-
-}
-.row {
-    display: flex;
-    flex-direction: row;
-}
-/* Logo */
-#Logo{
-    font-family: 'Monoton', cursive;
-    font-size: 2.5em;
-}
-/* Ofertas */
-#ofertas-banner #ofertas{
-    font-weight: 900;
-    font-size: 3em;
-    margin-left:150px ;
-    text-decoration: none;
-    color:black;
-}
-#ofertas-banner #ofertas:hover{
-    color: red;
-    animation: crecer 1000ms ;
-    animation-iteration-count: 1;
-}
-
-@keyframes crecer {
-    0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.2);
-      }
-      100% {
-        transform: scale(1);
-      }
-}
-/* Carrito-Icon */
-#carrito{
-    font-size: 1.2em;
-    cursor: pointer;
-    color:white;
-}
-#carrito:hover{
-    color: red;
-}
 
 /*Menu Lateral*/
 #check-btn{
@@ -191,14 +96,12 @@ h1{
     font-size: 2em;
     cursor: pointer ;
 }
-
 #cont-menu label:hover{
     color: red;
 }
 
 
-
-/*Menu Horizontal*/
+/*Menu Horizontal Desplegable*/
 #checkbtn{
     display: none;
 }
@@ -232,12 +135,83 @@ h1{
 }
 #menu-horizontal li{
     padding-bottom: 20px;
-    /* margin-left: 10px; */
 }
 #menu-horizontal li a:hover{
     background-color: #1f1f1f;
     border-left: 5px solid #fff;
     color: rgb(255, 0, 0);
+}
+
+
+/* Iconos del menu de 3 opciones*/
+/* ----------------------------------------- */
+/* Iconos */
+.icon-menu{
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.icon-menu:hover{
+    color: red;
+}
+/* Logo de PizzaBro */
+#Logo{
+    font-family: 'Monoton', cursive;
+    font-size: 2.5em;
+}
+/* Carrito-Icon */
+#carrito{
+    font-size: 1.2em;
+    cursor: pointer;
+    color:white;
+}
+#carrito:hover{
+    color: red;
+}
+/* ----------------------------------------- */
+
+
+/* Contenedor del baner,loguin,ofertas y footer */
+.container{
+    width: 100%;
+    height: 1080px;
+    min-height:640px;
+    display: grid;
+    grid-template-rows: 200px 300px 1fr 500px;
+}
+.container #ofertas-banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(img/bannerpiza.png);
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: cover;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.644);
+}
+
+
+/* Ofertas - Banner  */
+#ofertas-banner #ofertas{
+    font-weight: 900;
+    font-size: 3em;
+    margin-left:150px ;
+    text-decoration: none;
+    color:black;
+}
+#ofertas-banner #ofertas:hover{
+    color: red;
+    animation: crecer 1000ms ;
+    animation-iteration-count: 1;
+}
+
+
+/* Btn Loguin Container */
+#login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 /*Boton de Login*/
 #btn-login{
@@ -260,13 +234,47 @@ h1{
     color: rgba(255, 255, 0, 0.507);
     box-shadow: 0px 10px 15px 0 rgba(201, 246, 4, 0.592);
 }
+
+
+/* Ofertas-Contenedor */
+#seccion-opciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10%;
+    background-image: url(img/board.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 8px 20px 20px rgba(0, 0, 0, 0.644);
+}
+
+
+/* Contenedor de las tarjetas con las ofertas */
+#container-tarjetas{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 35px;
+
+}
 /*Tarjetas*/
 .tarjetas{
-    background-color:rgba(23, 23, 30, 0.435);
     border-radius: 7%;
     width: 300px;
     height: 350px;
 }
+.tarjetas:hover{
+    animation: crecer 1000ms ;
+    animation-iteration-count: 1;
+    box-shadow: 0px 10px 15px 0 rgba(201, 246, 4, 0.592);
+}
+
+
+/* Menu de opciones */
 #t1{
  background-image: url(img/Ofertas/1.jpg);
  background-position: center;
@@ -274,21 +282,18 @@ h1{
  background-repeat: no-repeat;
 }
 #t2{
-
  background-image: url(img/Ofertas/2.jpg);
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
 }
 #t3{
-
  background-image: url(img/Ofertas/3.jpg);
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
 }
 #t4{
-
  background-image: url(img/Ofertas/4.jpg);
  background-position: center;
  background-size: cover;
@@ -302,18 +307,15 @@ h1{
  background-repeat: no-repeat;
 }
 #t6{
-
  background-image: url(img/Ofertas/6.jpg);
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
 }
 
-.tarjetas:hover{
-    animation: crecer 1000ms ;
-    animation-iteration-count: 1;
-    box-shadow: 0px 10px 15px 0 rgba(201, 246, 4, 0.592);
-}
+
+/* Footer */
+/* ----------------------------------------- */
 #footer{
     display: flex;
     flex-direction:  row;
@@ -340,7 +342,6 @@ h1{
     
 
 }
-
 #info{
     display: flex;
     flex-direction: column;
@@ -353,7 +354,6 @@ h1{
     font-weight: 300;
     color: #fff;
 }
-
 #redes{
     display: flex;
     flex-direction: column;
@@ -367,7 +367,10 @@ h1{
     font-weight: 300;
     color: #fff;
 }
+/* ----------------------------------------- */
 
+
+/* Redes Propiedades */
 #redes>ul{
     list-style: none;
 }
@@ -382,4 +385,18 @@ h1{
 }
 #iconI:hover{
     color: rgb(75, 12, 60);
+}
+
+
+/* Animaciones */
+@keyframes crecer {
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
 }
