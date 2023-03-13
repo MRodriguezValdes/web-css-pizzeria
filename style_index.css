@@ -157,6 +157,10 @@ h1{
 #Logo{
     font-family: 'Monoton', cursive;
     font-size: 2.5em;
+    transition: color 0.5s ease;
+}
+#Logo:hover{
+    animation: cambio-color 1.5s ease;
 }
 /* Carrito-Icon */
 #carrito{
@@ -400,3 +404,11 @@ h1{
         transform: scale(1);
       }
 }
+@keyframes cambio-color {
+    0% {
+      color: #ffffff;
+    }
+    100% {
+      color: #eb0909;
+    }
+  }

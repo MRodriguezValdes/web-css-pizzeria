@@ -64,9 +64,11 @@ table tr:hover{
 .home-icon{
     color: rgba(150, 33, 33, 0.857);
     font-size: 3em;
+    transition: color 0.5s ease;
 }
 .home-icon:hover{
     color: red;
+    animation: cambio-color 1.5s ease;
 }
 
 
@@ -82,3 +84,14 @@ table tr:hover{
         transform: scale(1);
       }
 }
+@keyframes cambio-color {
+    0% {
+      color: #ffffff;
+    }
+    50%{
+      color: rgb(224, 88, 9);
+    }
+    100% {
+      color: #eb0909;
+    }
+  }

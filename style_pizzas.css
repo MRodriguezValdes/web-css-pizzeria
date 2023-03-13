@@ -59,9 +59,11 @@ input:hover{
     text-decoration: none;
     margin-left: 40px;
     font-size: 2em;
+    transition: color 0.5s ease;
 }
 .home-icon:hover{
     color: red;
+    animation: cambio-color 1.5s ease;
 }
 
 
@@ -155,3 +157,14 @@ input:hover{
     100%{background-image: url(img/Ofertas/4.jpg);background-position: center;
       background-size: cover;}
 }
+@keyframes cambio-color {
+    0% {
+      color: #ffffff;
+    }
+    50%{
+      color: rgb(224, 88, 9);
+    }
+    100% {
+      color: #eb0909;
+    }
+  }
