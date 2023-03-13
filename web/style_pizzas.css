@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 140vh;
+    /* min-height: 140vh; */
     background-color: rgba(156, 158, 158, 0.704);
     animation:  cambiar-fondo 10s ease infinite;
     transition: all ease 500ms;

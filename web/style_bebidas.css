@@ -1,20 +1,18 @@
-/* General */
+/*General*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
 }
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 140vh;
-    position: relative;
+    /* min-height: 140vh; */
     background-color: rgba(156, 158, 158, 0.704);
     animation:  cambiar-fondo 10s ease infinite;
-    transition: all 2s ease ;
+    transition: all ease 500ms;
 
 }
 span{
@@ -36,10 +34,7 @@ input:hover{
     display: grid;
     grid-template-rows: 0.8fr 10fr;
     
-    
-    position: absolute;
     width: 60%;
-    min-height: 90%;
     background-color:  rgba(0, 0, 0, 0.555);
     border-radius: 20px;
     box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.752);
@@ -68,7 +63,7 @@ input:hover{
 }
 
 
-/* Bebidas-Opciones */
+/* bebidas-Opciones */
 .bebidas{
 
     display: grid;
@@ -94,55 +89,55 @@ input:hover{
 .T1{
     background-image: url(img/Bebidas/1.jpg);
     background-position: center;
-    background-size:  cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .T2{
     background-image: url(img/Bebidas/2.jpg);
     background-position: center;
-    background-size:  cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .T3{
     background-image: url(img/Bebidas/3.jpg);
     background-position: center;
-    background-size:  cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .T4{
     background-image: url(img/Bebidas/4.jpg);
     background-position: center;
-    background-size:  cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .T5{
     background-image: url(img/Bebidas/5.jpg);
     background-position: center;
-    background-size:  cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .T6{
     background-image: url(img/Bebidas/6.jpg);
     background-position: center;
-    background-size:  cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .T7{
     background-image: url(img/Bebidas/7.jpg);
     background-position: center;
-    background-size:  cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .T8{
     background-image: url(img/Bebidas/8.jpg);
     background-position: center;
-    background-size:  cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .T9{
     background-image: url(img/Bebidas/9.jpg);
     background-position: center;
-    background-size:  cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -150,13 +145,13 @@ input:hover{
 /* Animaciones */
 @keyframes cambiar-fondo {
     0%{background-image: url(img/Ofertas/1.jpg);background-position: center;
-      background-size:  cover;}
+      background-size: cover;}
     25%{background-image: url(img/Ofertas/2.jpg);background-position: center;
-      background-size:  cover;}
+      background-size: cover;}
     50%{background-image: url(img/Ofertas/3.jpg);background-position: center;
-      background-size:  cover;}
+      background-size: cover;}
     100%{background-image: url(img/Ofertas/4.jpg);background-position: center;
-      background-size:  cover;}
+      background-size: cover;}
 }
 @keyframes cambio-color {
     0% {
@@ -169,6 +164,7 @@ input:hover{
       color: #eb0909;
     }
   }
+
 
 /* Media queries */
 
@@ -185,6 +181,7 @@ input:hover{
     }
 }
 @media screen and (min-width: 701px) and (max-width: 1400px) {
+
     .container{
         width: 100%;
     }
