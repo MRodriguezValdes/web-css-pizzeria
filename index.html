@@ -2,16 +2,22 @@
 <html lang="en">
   <head>
     <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- LINKS -->
-    <script src="https://kit.fontawesome.com/f1b6205bc6.js" crossorigin="anonymous"></script>
 
+    <!-- fonts-->
+    <script src="https://kit.fontawesome.com/f1b6205bc6.js" crossorigin="anonymous"></script>
+    
+    <!-- Css -->
     <link rel="stylesheet" href="style_index.css">
-    <!-- ------- -->
+    
+    <!-- Titulo -->
     <title>Document</title>
   </head>
   <body>
     
+    <!-- Menu Fijo -->
     <header id ="menuPrincipal">
       <span id="Logo">PizzaBro</span>
       <menu>
@@ -22,10 +28,14 @@
               <i class="fa-regular fa-circle-question"></i>
             </label>
             <input type="checkbox" name="" id="checkbtn">
+    
+            <!-- Menu desplegable -->
             <ul id="menu-horizontal">
               <li><a href="#info">Acerca de nosotros</a> </li>
               <li><a href="#redes">Contactanos</a> </li>
             </ul>
+    
+    
           </li>
           <li>
             <a href="#" title="Carrito" id="carrito"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -33,15 +43,41 @@
         </ul>
       </menu>
     </header>
-    <nav class="container">
+
+
+    <!-- Menu Lateral Desplegable Ocultable -->
+    <input type="checkbox" name="" id="check-btn">
+    <div class="container-menu">
+      <div id="cont-menu">
+        <nav>
+          <a href="pizzas.html"> <i class="fa-solid fa-pizza-slice"></i> Pizzas</a>
+          <a href="postres.html"><i class="fa-solid fa-ice-cream"></i> Postres</a>
+          <a href="bebidas.html"><i class="fa-solid fa-champagne-glasses"></i> Bebidas</a>
+          <a href="Horario.html"><i class="fa-regular fa-clock"></i> Horario</a>
+        </nav>
+        <label for="check-btn"><i class="fa-solid fa-xmark"></i></label>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="container">
+
+      <!-- -----Banner-------- -->
       <nav id="ofertas-banner">
         <a href="#seccion-opciones" title="Ofertas" id ="ofertas"> <span>Ofertas</span></a>
       </nav>
+      
+      <!-- -----Login--------- -->
       <div id="login">
         <a href="login.html" id="btn-login"><i class="fa-solid fa-arrow-right-to-bracket"></i>
         </a>  
       </div>
     
+      <!-- ----Ofertas-------- -->
       <section id="seccion-opciones" title="Seccion de Opciones">
         <div id="container-tarjetas">
           <div class="tarjetas " id="t1"></div>
@@ -51,10 +87,13 @@
           <div class="tarjetas " id="t5"></div>
           <div class="tarjetas " id="t6"></div>
         </div>
-          
       </section>
+
+      <!-- ----Footer--------- -->
       <footer id="footer" title="info">
         
+
+        <!-- ---Direccion--- -->
         <address title="direccion" id="direccion">
           <h1>
             Direccion:
@@ -63,6 +102,9 @@
           07003 Palma de Mallorca <br>
           Islas Baleares, España
         </address>
+
+        <!-- ----INFO---- -->
+
         <section title="Quienes Somos" id="info">
           <h1>
             Quienes Somos :
@@ -70,6 +112,8 @@
           <p>Todo comenzó con dos amigos, Sam y Joe. Sam era un experto cocinero y Joe era un experto vendedor. Ambos compartían una pasión por la pizza y decidieron unirse para crear un negocio.Juntos, abrieron PizzaBro, una pizzería que ofrece a sus clientes las mejores pizzas con los mejores precios. Pronto, el negocio se volvió muy popular entre los residentes de la ciudad, y PizzaBro se convirtió en una de las pizzerías más populares de la ciudad. ¡Y así fue como nació PizzaBro!</p> 
           
         </section>
+        
+        <!-- ----Redes---- -->
         <section title="Redes Sociales" id="redes">
           <h1>
             Contactanos
@@ -83,18 +127,8 @@
         </section>
             
       </footer>
-    </nav>
-    <input type="checkbox" name="" id="check-btn">
-    <div class="container-menu">
-      <div id="cont-menu">
-        <nav>
-          <a href="pizzas.html"> <i class="fa-solid fa-pizza-slice"></i> Pizzas</a>
-          <a href="postres.html"><i class="fa-solid fa-ice-cream"></i> Postres</a>
-          <a href="bebidas.html"><i class="fa-solid fa-champagne-glasses"></i> Bebidas</a>
-          <a href="Horario.html"><i class="fa-regular fa-clock"></i> Horario</a>
-        </nav>
-        <label for="check-btn"><i class="fa-solid fa-xmark"></i></label>
-      </div>
+
+
     </div>
     
   </body>
